@@ -138,17 +138,6 @@ When the task is ready (`status: "ready"`), `solution` contains:
 |-------|------|-------|
 | `token` | `string` | The ALTCHA solution payload. Submit on the target site exactly where ALTCHA expects it. |
 
-### Example
-
-```json
-{
-  "status": "ready",
-  "solution": {
-    "token": "<ALTCHA solution payload (base64 JSON: algorithm + challenge + number + salt + signature)>"
-  }
-}
-```
-
 ### How to use the result
 
 Submit the returned token in the `altcha` hidden input on the target site's form.
